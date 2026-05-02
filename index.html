@@ -62,6 +62,11 @@
 <body>
   <div id="app"></div>
   <script type="module" src="/src/main.tsx"></script>
+
+<script>
+      fetch('https://tj.yun.bar/api/track', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ site_id: 'NewsNow', path: window.location.pathname }) }).catch(e => {});
+    </script>
+
 </body>
 
 </html>
